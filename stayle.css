@@ -376,14 +376,14 @@ line-height: normal;
 }
 
 .img-back1{
-background-image: url("/mohammed/imgs/img1.png");
+background-image: url("./images/img1.png");
 /* opacity: 0.3; */
 }
 
 .img-back2{
-background-image: url("/mohammed/imgs/img2.png");
+background-image: url("./images/img2.png");
 }
 
 .img-back3{
-background-image: url("/mohammed/imgs/img3.png");
+background-image: url("./images/img3.png");
 }

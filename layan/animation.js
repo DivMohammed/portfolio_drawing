@@ -24,7 +24,7 @@ let tl = gsap.timeline({scrollTrigger:{
   trigger:'.art',
   start:'top center',
   end:'bottom center',
-  markers:true,
+  
   //it can be play pause resume reverse restart reset complete none  
   toggleActions: 'restart reverse restart reverse'
 },});
@@ -54,7 +54,7 @@ contactTl= gsap.timeline({scrollTrigger:{
   trigger:'.contact',
   start:'top center',
   end:'bottom center',
-  markers:true,
+  
   //it can be play pause resume reverse restart reset complete none  
   toggleActions: 'restart reverse restart reverse'
 },});

@@ -107,6 +107,9 @@ header{
     color: var(--white);
     cursor: pointer;
   }
+  header i {
+    display: none !important;
+  }
   
   header img{
     height: 24px;
@@ -300,13 +303,13 @@ header{
     width: 30px;
     cursor: pointer;
    }
+   
   
    @media (max-width: 800px) {
     .art section {
       height: fit-content;
       display: flex;
       flex-direction: column;
-      
     }
     .art{
       height: fit-content;
@@ -319,6 +322,44 @@ header{
     input,textarea{
       width:300px ;
     }
+    .navBar{
+      display: none;
+    }
+   .responsive{
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      background-color: var(--black);
+      top: 70px;
+      left: 0;
+      right: 0;
+      padding: 30px 80px;
+    }
+    header{
+      width: 100vw;
+      padding: 0px 50px;
+    }
+    header i{
+      display: block !important;
+      cursor: pointer;
+    }
+    
+  }
+  @media (max-width: 1200px) and (min-width: 800px)  {
+    .art section {
+      height: fit-content;
+      display: flex;
+      flex-direction: column;
+    }
+    .art{
+      height: fit-content;
+    }
+    .card{
+      width: 350px;
+      padding-top: 250px;
+      padding-bottom: 30px;
+    }
+    
   }
 
 
@@ -402,7 +443,7 @@ header{
     }
 
     .hold_home_text p{
-      width: 100px;
+      width: 180px;
     }
   }
 
@@ -431,7 +472,7 @@ header{
 /* Small */
 @media (max-width: 768px) {
   .hold_home_text .button{
-    width: 80px;
+    width: 100px;
     font-size: 16px;
   }
 }

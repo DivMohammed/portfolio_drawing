@@ -1,10 +1,7 @@
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poly&display=swap');
 
-html{
-  scroll-behavior: smooth;
-  
-}
+
 :root {
   --green: #DDDED3;
   --black: #161212;
@@ -19,6 +16,7 @@ html{
 }
 
 
+
 header{
   position: fixed;
   top: 0;
@@ -28,23 +26,24 @@ header{
   height: 70px;
   background-color: var(--black);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 0px 80px;
   font-size: 22px;
   z-index: 1000;
 }
-header nav{
+header div{
   display: flex;
   gap: 8vw;
 }
 header a{
   text-decoration: none;
   color: var(--white);
-  
+  cursor: pointer;
 }
 
 header img{
-  height: 28px;
+  height: 24px;
 }
 .art{
   width: 100%;
@@ -57,7 +56,11 @@ header img{
   padding: 150px;
 }
 .art img{
-  width: 294px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .art section{
   display: flex;
@@ -77,10 +80,11 @@ header img{
   align-items: center;
   width: 346px;
   gap: 40px;
-  border-radius: 8px;
-  padding: 24px;
- 
+  border-radius: 8px; 
+  position: relative;
+  padding: 280px 30px 0px 30px;
 }
+
 .card p{
   color: var(--brown);
 }
@@ -110,6 +114,23 @@ hr{
   
 }
 
+@media (max-width: 800px) {
+  .art section {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .art{
+    height: fit-content;
+  }
+  .card{
+    width: 247px;
+    padding-top: 190px;
+    padding-bottom: 30px;
+  }
+}
+
 
 
 
@@ -132,27 +153,15 @@ hr{
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10vw;
+  flex-direction: column;
+  gap: 30px;
   margin-top: 100px;
-  margin-right: 180px;
-}
-.social img{
- height: 39px;
- cursor: pointer;
  
 }
 
-.social p{
-  font-family: Poly;
-  font-size: 36px;
-  
-}
-.social > div{
- display: flex;
- align-items: center;
- gap: 25px;
- margin-top: 80px;
-}
+
+
+
 
 .form{
   display: flex;
@@ -221,11 +230,23 @@ textarea:valid ~ .textLabel
 footer{
   background-color: var(--black);
   width: 100%;
-  height: 60px;
+  height: 150px;
   color: var(--white);
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 18px;
   text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 30px;
 }
+footer > div{
+  display: flex;
+  align-items: center;
+  gap: 25px;
+ }
+ footer img{
+  width: 30px;
+  cursor: pointer;
+ }

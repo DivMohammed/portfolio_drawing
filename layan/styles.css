@@ -114,22 +114,6 @@ hr{
   
 }
 
-@media (max-width: 800px) {
-  .art section {
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    
-  }
-  .art{
-    height: fit-content;
-  }
-  .card{
-    width: 247px;
-    padding-top: 190px;
-    padding-bottom: 30px;
-  }
-}
 
 
 
@@ -250,3 +234,23 @@ footer > div{
   width: 30px;
   cursor: pointer;
  }
+
+ @media (max-width: 800px) {
+  .art section {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .art{
+    height: fit-content;
+  }
+  .card{
+    width: 247px;
+    padding-top: 190px;
+    padding-bottom: 30px;
+  }
+  input,textarea{
+    width:300px ;
+  }
+}

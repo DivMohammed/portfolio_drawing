@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="stayle.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"> 
+  <title>Document</title>
+</head>
+<body>
+    <header>
+    
+        <img src="imgs/claude.png" alt="">
+        <div>
+          <a  value="#home">Home</a>
+          <a  value="#about">About me</a>
+          <a  value="#artwork">Artwork</a>
+          <a  value="#contact" >Contact me</a>
+        </div>
+        
+       
+    </header>
+    
+    
+    <section class="hold_home">
+        <div class="hold_home_text">
+            <h1>Claude Monet</h1>
+            <p>
+                Famous French painter  who was born in Paris
+            </p>
+            <a href="#hold_info"> <button class="button">Read more</button> </a>
+        </div>
+    </section>
+    
+    
+    <section class="hold_info" id="hold_info">
+        <div class="container">
+        <div class="hold_info_imgs">
+            <img src="imgs/infoImg2.png" alt="">
+            <img src="imgs/infoImg1.png" alt="">
+        </div>
+        <div class="hold_info_text">
+            <h2>About Me</h2>
+            <p>Explore the artistic legacy of <br> Claude Monet, a prominent figure <br> born in 1840. <br>
+                Delve into his timeless <br> Impressionist masterpieces, <br> distinguished by vivid interplays <br> of light and form.
+            </p>
+            <button id="" class="button">Contact me</button>
+        </div>
+        </div>
+    </section>
+    
+    
+    <div class="popup" id="popup">
+        <!-- top bar -->
+        <div class="top-bar">
+            <p class="image-name" style="width: auto;">عن اللوحة</p>
+            <span class="close-btn"></span>
+        </div>
+        
+        <div class="large-image" style="display: contents; flex-direction: row;">
+            <div class="container">
+                <div style="display: flex; flex-direction: row; justify-content: center;">
+                <p class="info_img">
+                </p>
+            </div>
+            </div>
+        </div>
+        <!-- image-index -->
+        <h1 class="index">01</h1>
+    </div>
+    
+    
+    <div class="wrapper">
+        <div class="container_wrapper scrollx">
+
+            <section class="sec1 pin section">
+            
+                <div id="back_img1" class="back_img anim">
+                    <img src="imgs/frame.png" alt="">
+                </div>
+                
+                <div id="back_img2" class="back_img anim">
+                    <img src="imgs/frame.png" alt="">
+                </div>
+            
+            </section>
+
+            <section class="sec2 pin section">
+                <div id="back_img3" class="back_img">
+                    <img src="imgs/frame.png" alt="">
+                </div>
+            </section>
+
+            <section class="sec3 pin section">
+                <div id="back_img4" class="back_img">
+                    <img src="imgs/frame.png" alt="">
+                </div>
+            
+                <div id="back_img5" class="back_img">
+                    <img src="imgs/frame.png" alt="">
+                </div>
+            </section>
+        </div>
+    </div>
+    
+    
+    <main id="section3" class="art">
+        <p>Art work</p>
+        <hr>
+        <section>
+        
+        <div class="card">
+            <img src="imgs/one.png" alt="">
+            <div>
+            <p>Art</p>
+            <h3>the garden at varengeville </h3>
+            <p>With Manet's assistance, Monet found lodging in suburban Argenteuil in late 1871
+            </p>
+            <button>
+                Read More
+            </button>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="imgs/two.png" alt="">
+            <div>
+            <p>Art</p>
+            <h3>the garden at varengeville </h3>
+            <p>With Manet's assistance, Monet found lodging in suburban Argenteuil in late 1871
+            </p>
+            <button>
+                Read More
+            </button>
+            </div>
+        </div>
+    
+        <div class="card">
+            <img src="imgs/three.png" alt="">
+            <div>
+            <p>Art</p>
+            <h3>the garden at varengeville </h3>
+            <p>With Manet's assistance, Monet found lodging in suburban Argenteuil in late 1871
+            </p>
+            <button>
+                Read More
+            </button>
+            </div>
+        </div>
+        
+        
+    </section>
+    </main>
+    
+    
+    <section id="section4" class="contact">
+    <p>CONTACT ME</p>
+    <hr>
+    <div class="container">
+        <h3>Leave me a message</h3>
+        <div class="form">
+        
+        <div>
+        <input class="name" type="text" required>
+        <p class="nameLabel">Name</p>
+        </div>
+        <div>
+        <input class="email" type="text" name="" id="" required >
+        <p class="emailLabel">Email Address</p>
+        </div>
+        <div>
+            <textarea name="" id="" cols="30" rows="10" required></textarea>
+            <p class="textLabel">Your Message</p>
+        </div>
+        
+        <button>Send</button>
+        </div>
+    </div>
+    </section>
+    
+    <footer>
+    <div>
+        <img src="imgs/insta.png" alt="">
+        <img src="imgs/twitter.png" alt="">
+        <img src="imgs/in.png" alt="">
+    </div>
+    ©Made by  Team Beta
+    </footer>
+    
+
+
+
+
+
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollToPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script> 
+    <script src="js/animation.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- cdn cursor -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" integrity="sha512-dLxUelApnYxpLt6K2iomGngnHO83iUvZytA3YjDUCjT0HDOHKXnVYdf3hU4JjM8uEhxf9nD1/ey98U3t2vZ0qQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- File JS -->
+    <script src="js/hover-effect.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

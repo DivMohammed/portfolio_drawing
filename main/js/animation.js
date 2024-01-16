@@ -30,7 +30,7 @@ let headerTl = gsap.timeline();
   },});
 
   homeTl.from('.hold_home_text h1',{x:'-200px', opacity:0,duration:1} )
-        .from('.hold_home_text p',{x:'200px', opacity:0,duration:1}, '<' )
+        .from('.hold_home_text p',{x:'-200px', opacity:0,duration:1}, '<' )
         .from('.hold_home_text button',{x:'-200px', opacity:0,duration:1}, '<' )
 
 //about animation
@@ -42,9 +42,9 @@ let aboutTl = gsap.timeline({scrollTrigger:{
 },});
 
 aboutTl.from('.hold_info_imgs',{x:'-200px', opacity:0,duration:1.4})
-       .from('.hold_info_text h2',{x:'200px', opacity:0,duration:1},'<')
-       .from('.hold_info_text p',{x:'200px', opacity:0,duration:1},'<0.5')
-       .from('.hold_info_text button',{x:'200px', opacity:0,duration:1},'<0.5')
+       .from('.hold_info_text h2',{x:'-200px', opacity:0,duration:1},'<')
+       .from('.hold_info_text p',{x:'-200px', opacity:0,duration:1},'<0.5')
+       .from('.hold_info_text button',{x:'-200px', opacity:0,duration:1},'<0.5')
 
 
 
